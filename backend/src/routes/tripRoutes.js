@@ -1,5 +1,6 @@
 // backend/src/routes/tripRoutes.js
 import express from "express";
+
 import {
   planTrip,
   planWithBudget,
