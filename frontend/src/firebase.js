@@ -12,15 +12,13 @@ import {
 
 // REPLACE with your real config from Firebase console
 const firebaseConfig = {
-    apiKey: "AIzaSyCRrqYZ4Xsq1Xb90UhnausuHKgcyb4yQ04",
-    authDomain: "gen-lang-client-0486050182.firebaseapp.com",
-    projectId: "gen-lang-client-0486050182",
-    storageBucket: "gen-lang-client-0486050182.firebasestorage.app",
-    messagingSenderId: "22314537126",
-    appId: "1:22314537126:web:9f9a907956a0be2bc1a467",
-    measurementId: "G-3HKJBVQT0V"
-  };
-
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID
+};
 const app = initializeApp(firebaseConfig);
 export const auth = getAuth(app);
 
